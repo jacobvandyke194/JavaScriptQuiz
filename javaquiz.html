@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link href="javaquiz.css" rel="stylesheet">
+</head>
+<body>
+    <section id="timer">
+        <h2>Are you ready?</h2>
+    </section>
+    <div class="landingpageBox">
+        <p id="beforeText">This is a quiz that will test your knowledge on concepts of different programming languages such as JavaScript, HTML5, CSS, etc. Goodluck! You're going to need it..</p>
+    </div>
+    <section class="hidden" id="questionBox"> 
+        <div id="questions">Question:</div>
+        <div class="buttonLayout" id=" answerBtn">
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+        </div>
+    </section>
+    <section class="timerControl">
+        <button class="startBtn btn" id="startBtn">Start</button>
+        <button class="btn hidden" id="resetBtn">Reset</button>
+        <button class="continueBtn btn hidden" id="continueBtn">Continue</button>
+    </section>
+    <input type="text" placeholder="Enter Name/Initials" onblur="getuserName()" id="nameBox">
+    <section class="userScore">
+        <h3></h3>
+    </section>
+<script src="javaquiz.js"></script>
+</body>
+</html>
